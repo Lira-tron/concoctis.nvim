@@ -37,6 +37,7 @@ function M.setup(config)
 		ConcoctisAquaBold = { fg = C.aqua, style = "bold" },
 		ConcoctisOrange = { fg = C.orange },
 		ConcoctisOrangeBold = { fg = C.orange, style = "bold" },
+		ConcoctisOrangeBoldLine = { fg = C.orange, style = "bold", bg = C.bg5 },
 		ConcoctisRedSign = config.transparent and { fg = C.red, bg = nil } or { fg = C.red, bg = C.bg4 },
 		ConcoctisGreenSign = config.transparent and { fg = C.green, bg = nil } or { fg = C.green, bg = C.bg4 },
 		ConcoctisYellowSign = { fg = C.yellow, bg = C.bg4 },
@@ -339,7 +340,7 @@ function M.setup(config)
 		CocHintHighlight = { link = "ConcoctisAquaUnderline" },
 		-- telescope.nvim
 		TelescopeNormal = { link = "ConcoctisFg1" },
-		TelescopeSelection = { link = "ConcoctisOrangeBold" },
+		TelescopeSelection = { link = "ConcoctisOrangeBoldLine" },
 		TelescopeSelectionCaret = { link = "ConcoctisRed" },
 		TelescopeMultiSelection = { link = "ConcoctisGray" },
 		TelescopeBorder = { link = "TelescopeNormal" },
