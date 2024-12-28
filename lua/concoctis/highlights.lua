@@ -61,7 +61,7 @@ function M.setup(config)
 		MatchParen = { fg = C.fg0, bg = "none", style = "bold" },
 		ColorColumn = { bg = C.bg5 },
 		Conceal = { fg = C.blue },
-		CursorLineNr = { fg = C.yellow, bg = C.bg5 },
+		CursorLineNr = config.transparent and { fg = C.yellow, bg = nil } or { fg = C.yellow, bg = C.bg5 },
 		NonText = { link = "Concoctisbg6" },
 		SpecialKey = { link = "concoctisFg1" },
 		Visual = { bg = C.bg7 },
