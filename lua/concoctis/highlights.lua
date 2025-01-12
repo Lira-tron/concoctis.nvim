@@ -93,7 +93,7 @@ function M.setup(config)
     vCursor = { link = 'Cursor' },
     iCursor = { link = 'Cursor' },
     lCursor = { link = 'Cursor' },
-    Special = { fg = C.purple },
+    Special = { fg = C.darkOrange },
     Comment = { fg = C.bg8, style = 'italic' },
     Todo = { fg = C.fg0, style = { 'bold', 'italic' } },
     Done = { fg = C.orange, style = { 'bold', 'italic' } },
@@ -778,6 +778,28 @@ function M.setup(config)
     CarbonPending = { link = 'ConcoctisYellow' },
 
     BlinkCmpGhostText = { fg = '#666666' },
+
+    RenderMarkdownCodeInline = { bg = C.bg2 },
+    -- RenderMarkdownBullet = { fg = C.sky },
+    RenderMarkdownTableHead = { fg = C.darkBlue },
+    -- RenderMarkdownTableRow = { fg = C.darkGreen },
+    RenderMarkdownSuccess = { fg = C.green },
+    RenderMarkdownInfo = { fg = C.darkAqua },
+    RenderMarkdownHint = { fg = C.darkBlue },
+    RenderMarkdownWarn = { fg = C.yellow },
+    RenderMarkdownError = { fg = C.red },
+    RenderMarkdownCode = { bg = C.bg2 },
+    -- The 'highlight_inline' attribute for the 'code' block defaults to 'RenderMarkdownCode'.
+    -- If setting 'fg = gruvbox_bright_green' for 'RenderMarkdownCode', everything inside a code block gets
+    -- highlighted bright_green. If using the default value for 'highlight_inline', inline code in headings
+    -- become black boxes. To fix this, define a new highlight group and assign it to 'highlight_inline'.
+    -- _InlineCode = { fg = C.green, bg = C.bg2 },
+    RenderMarkdownH1Bg = { fg = C.bg0, bg = C.darkGreen, bold = true },
+    RenderMarkdownH2Bg = { fg = C.bg0, bg = C.darkBlue, bold = true },
+    RenderMarkdownH3Bg = { fg = C.bg0, bg = C.darkAqua, bold = true },
+    RenderMarkdownH4Bg = { fg = C.bg0, bg = C.darkPurple, bold = true },
+    RenderMarkdownH5Bg = { fg = C.bg0, bg = C.darkYellow, bold = true },
+    RenderMarkdownH6Bg = { fg = C.bg0, bg = C.darkRed, bold = true },
   }
 
   for group, hl in pairs(config.override_highlights) do
