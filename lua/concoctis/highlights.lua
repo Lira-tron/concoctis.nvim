@@ -93,7 +93,7 @@ function M.setup(config)
     vCursor = { link = 'Cursor' },
     iCursor = { link = 'Cursor' },
     lCursor = { link = 'Cursor' },
-    Special = { fg = C.darkOrange },
+    Special = { fg = C.purple },
     Comment = { fg = C.bg8, style = 'italic' },
     Todo = { fg = C.fg0, style = { 'bold', 'italic' } },
     Done = { fg = C.orange, style = { 'bold', 'italic' } },
