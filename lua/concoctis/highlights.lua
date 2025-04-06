@@ -350,6 +350,21 @@ function M.setup(config)
     TelescopeMatching = { link = 'ConcoctisBlue' },
     TelescopePromptPrefix = { link = 'ConcoctisRed' },
     TelescopePrompt = { link = 'TelescopeNormal' },
+    -- Snacks
+    SnacksPicker = { link = 'TelescopeNormal' },
+    SnacksPickerBorder = { link = 'TelescopeBorder' },
+    SnacksPickerTitle = { link = 'Title' },
+    SnacksPickerFooter = { link = 'SnacksPickerTitle' },
+    SnacksPickerPrompt = { link = 'TelescopePrompt' },
+    SnacksPickerInputCursorLine = { link = 'TelescopeNormal' },
+    SnacksPickerListCursorLine = { link = 'DiffText' },
+    SnacksPickerMatch = { link = 'TelescopeMatching' },
+    SnacksPickerToggle = { link = 'CursorLine' },
+    SnacksPickerDir = { link = 'Comment' },
+    SnacksPickerBufFlags = { link = 'ConcoctisGray' },
+    SnacksPickerSelected = { link = ' TelescopeSelection' },
+    SnacksPickerKeymapRhs = { link = 'ConcoctisGray' },
+
     -- nvim-cmp
     CmpItemAbbr = { link = 'ConcoctisFg0' },
     CmpItemAbbrDeprecated = { link = 'ConcoctisFg1' },
