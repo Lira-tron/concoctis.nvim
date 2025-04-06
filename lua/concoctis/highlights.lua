@@ -358,7 +358,7 @@ function M.setup(config)
     SnacksPickerPrompt = { link = 'TelescopePrompt' },
     SnacksPickerInputCursorLine = { link = 'TelescopeNormal' },
     SnacksPickerListCursorLine = { link = 'DiffText' },
-    SnacksPickerMatch = { link = 'TelescopeMatching' },
+    SnacksPickerMatch = { link = 'CursorLine' },
     SnacksPickerToggle = { link = 'CursorLine' },
     SnacksPickerDir = { link = 'Comment' },
     SnacksPickerBufFlags = { link = 'ConcoctisGray' },
